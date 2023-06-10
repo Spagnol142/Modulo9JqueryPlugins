@@ -34,7 +34,9 @@ $(document).ready(function() {
             nome: 'Por favor, insira o seu nome'
         },
         submitHandler: function(form){
-            console.log(form)
+            alert('Enviado com sucesso!!!')
+                $('form input').val('');
+                $('form textarea').val('');
         },
         invalidHandler: function(evento, validador) {
             let camposIncorretos = validador.numberOfInvalids();
